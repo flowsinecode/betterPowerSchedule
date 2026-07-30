@@ -30,13 +30,13 @@ def start(time, action, comment):
                     text=True)
     else:
         if action =='Shut down':
-            execute = sb.Popen(['sudo', 'shutdown', '-h', '+'+str(time), comment]
+            execute = sb.Popen(['sudo', 'shutdown', '-h', '+'+str(time), comment],
                     stdin=sb.PIPE, 
                     stdout=sb.PIPE, 
                     stderr=sb.PIPE,
                     text=True,)
         else:
-            execute = sb.Popen(['sudo', 'shutdown', '-r', '+'+str(time), comment]
+            execute = sb.Popen(['sudo', 'shutdown', '-r', '+'+str(time), comment],
                     stdin=sb.PIPE, 
                     stdout=sb.PIPE, 
                     stderr=sb.PIPE,
