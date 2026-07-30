@@ -2,6 +2,7 @@ import customtkinter as ctk
 from CTkMenuBar import *
 import platform
 import tkinter.messagebox
+import sys
 
 from gui.windows import Windows
 from gui.macos import macOS
@@ -30,5 +31,7 @@ elif platform.system() == "Linux":
     Linux(app).place(relx=0.5, rely=0.5, anchor="center")
 else:
     tkinter.messagebox.showerror("OS Error", "bPS can't support with this operating system.\nbPS supports only Windows (10+), macOS (with Apple Silicon) and Linux; not this OS.")
+    app.destroy()
+    sys.exit(1)
 
 app.mainloop()
