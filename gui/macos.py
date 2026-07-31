@@ -65,5 +65,5 @@ class macOS(ctk.CTkFrame):
         self.start.grid(row=0, column=2)
 
     def start(self):
-        self.timetostart = (self.hours_pick.get()*3600) + (self.mins_pick.get()*60) + self.secs_pick.get()
+        self.timetostart = (self.hours_pick.get() * 60) + self.mins_pick.get() + (round(self.secs_pick.get() / 60)) # Low accuracy
         macos.start(self.timetostart, self.action, self.comment.get())
