@@ -11,7 +11,7 @@ from core.config import OpenSettings
 
 app = ctk.CTk()
 app.title("betterPowerSchedule")
-app.geometry("439x371")
+app.resizable(False, False)
 
 def openconfig():
     OpenSettings(app)
@@ -19,16 +19,16 @@ def openconfig():
 menu = CTkMenuBar(master=app)
 button = menu.add_cascade("Menu")
 dropdown = CustomDropdownMenu(widget=button)
-dropdown.add_option(option="Open Setting")
+dropdown.add_option(option="Open Setting", command=openconfig)
 dropdown.add_separator() 
 dropdown.add_option(option="About") 
 
 if platform.system() == "Windows":
-    Windows(app).place(relx=0.5, rely=0.5, anchor="center")
+    Windows(app).pack(expand=True, fill="both")
 elif platform.system() == "Darwin":
-    macOS(app).place(relx=0.5, rely=0.5, anchor="center")
+    macOS(app).pack(expand=True, fill="both")
 elif platform.system() == "Linux":
-    Linux(app).place(relx=0.5, rely=0.5, anchor="center")
+    Linux(app).pack(expand=True, fill="both")
 else:
     tkinter.messagebox.showerror("OS Error", "bPS can't support with this operating system.\nbPS supports only Windows (10+), macOS (with Apple Silicon) and Linux; not this OS.")
     app.destroy()

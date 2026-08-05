@@ -66,4 +66,4 @@ class Windows(ctk.CTkFrame):
 
     def start(self):
         self.timetostart = (self.hours_pick.get()*3600) + (self.mins_pick.get()*60) + self.secs_pick.get()
-        windows.start(self.timetostart, self.action, self.comment.get())
+        windows.start(self.timetostart, self.action_option.get(), self.comment.get())

@@ -66,4 +66,4 @@ class Linux(ctk.CTkFrame):
 
     def start(self):
         self.timetostart = (self.hours_pick.get() * 60) + self.mins_pick.get() + (round(self.secs_pick.get() / 60)) # Low accuracy
-        linux.start(self.timetostart, self.action, self.comment.get())
+        linux.start(self.timetostart, self.action_option.get(), self.comment.get())
