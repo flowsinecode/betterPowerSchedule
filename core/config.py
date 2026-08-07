@@ -37,4 +37,8 @@ class OpenSettings(ctk.CTkToplevel):
         }
         with open(self.path_to_config_file, "w", encoding="utf-8") as fileconfig:
             json.dump(self.changes, fileconfig, ensure_ascii=False, indent=2)
+        with open(self.path_to_config_file, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            ctk.set_appearance_mode(data["appearance"])
+            ctk.set_default_color_theme(data["color"])
         tkinter.messagebox.showinfo("Saved change!", "Restart bPS to apply!")
