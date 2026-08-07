@@ -1,5 +1,5 @@
-// On GitHub, these settings are default
 {
-    "appearance":"light",
-    "color":"blue"
+    "appearance": "system",
+    "color": "blue",
+    "note":"In GitHub, these settings are default. You can change it in Settings"
 }
