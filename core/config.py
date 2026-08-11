@@ -14,6 +14,8 @@ class OpenSettings(ctk.CTkToplevel):
 
         self.title("Settings")
         self.attributes("-topmost", True)
+        self.resizable(False, False)
+        self.iconbitmap(os.path.join(os.path.dirname(__file__), "..", "assets", "icon.ico"))
 
         self.configframe = ctk.CTkFrame(self)
         self.configframe.pack(expand=True, fill="both")

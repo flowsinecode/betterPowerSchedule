@@ -14,6 +14,7 @@ from core.config import OpenSettings
 app = ctk.CTk()
 app.title("betterPowerSchedule")
 app.resizable(False, False)
+app.iconbitmap(os.path.join(os.path.dirname(__file__), "assets", "icon.ico"))
 
 settingsfile = os.path.join(os.path.dirname(__file__), "assets", "settings.json")
 with open(settingsfile, "r", encoding="utf-8") as f:
