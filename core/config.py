@@ -18,12 +18,12 @@ class OpenSettings(ctk.CTkToplevel):
         self.configframe = ctk.CTkFrame(self)
         self.configframe.pack(expand=True, fill="both")
 
-        ctk.CTkLabel(self.configframe , text="Appearance").grid(row=0, column=0)
+        ctk.CTkLabel(self.configframe , text="Appearance  ").grid(row=0, column=0)
         self.appearance = ctk.CTkOptionMenu(self.configframe , values=["system", "light", "dark"])
         self.appearance.grid(row=0, column=1)
         self.appearance.set(f"{self.fileconfignow["appearance"]}")
 
-        ctk.CTkLabel(self.configframe , text="Theme").grid(row=1, column=0)
+        ctk.CTkLabel(self.configframe , text="Theme         ").grid(row=1, column=0)
         self.theme = ctk.CTkOptionMenu(self.configframe, values=["blue", "green", "dark-blue"])
         self.theme.grid(row=1, column=1)
         self.theme.set(f"{self.fileconfignow["color"]}")
