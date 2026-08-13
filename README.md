@@ -63,3 +63,11 @@ You just simply press on Stop button
 # Screenshot
 
 <img width="379" height="301" alt="image" src="https://github.com/user-attachments/assets/3ae46a49-e558-4297-8417-290dcb605dfa" />
+
+# Report bug
+
+If you found any bugs, feel free to [make a new Issues on GitHub](https://github.com/flowsinecode/betterPowerSchedule/issues/new/choose)!
+
+# Made with ❤ by Flowsine
+
+If you like bPS, please give it a star; I would greatly appreciate it, and it would motivate me to keep developing bPS. Thank you so much! ❤
