@@ -23,7 +23,7 @@ Windows, macOS and Linux have a command in cmd/Terminal that can schedule the co
 
 So, bPS just run that command on your computer.
 
-> Why does bPS use that mechanism instead of performing the action after a countdown within the app itself? By using that mechanism, the bPS can be closed without interrupting the counter. This will not affect the computer's process.
+> Why does bPS use that mechanism instead of performing the action after a countdown within the app itself? By using that mechanism, the bPS can be closed without interrupting the counter. This also will not affect the computer's process.
 
 # Download & Installation
 
