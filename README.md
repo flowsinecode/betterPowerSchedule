@@ -23,7 +23,9 @@ Windows, macOS and Linux have a command in cmd/Terminal that can schedule the co
 
 So, bPS just run that command on your computer.
 
-> Why does bPS use that mechanism instead of performing the action after a countdown within the app itself? By using that mechanism, the bPS can be closed without interrupting the counter. This also will not affect the computer's process.
+> [!TIP]
+> Why does bPS use that mechanism instead of performing the action after a countdown within the app itself?
+> By using that mechanism, the bPS can be closed without interrupting the counter. This also will not affect the computer's process.
 
 # Download & Installation
 
@@ -51,14 +53,15 @@ python main.py
 1. Open bPS
 2. Set the timer (h, m, s)
 3. Set action (Shut down or Restart)
-4. (Option) Set comment
+4. (Option) Set comment (Make it blank to disable)
 5. Press Start
 
 ### Stop
 
 You just simply press on Stop button
 
-> Note: On macOS and Linux, you have to enter the `sudo` password!
+> [!NOTE]
+> On macOS and Linux, you have to enter the `sudo` password!
 
 # Screenshot
 
